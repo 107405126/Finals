@@ -1,0 +1,486 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .header {
+            background-color: #F0E8B6;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 199px;
+            padding-right: 199px;
+        }
+
+        .title {
+            height: 220px;
+            background-color: #FFFDED;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 58px;
+            color: #425828;
+            display: flex;
+            padding-left: 199px;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-weight: 200;
+            font-size: 24px;
+            line-height: 29px;
+            color: #657256;
+            display: flex;
+            padding-left: 199px;
+            padding-bottom: 5px;
+        }
+
+        span {
+            font-weight: 200;
+            font-size: 20px;
+            line-height: 24px;
+            color: #978E8E;
+            padding-left: 199px;
+            flex-wrap: nowrap;
+        }
+
+        .article {
+            background-color: #F3F2E7;
+            padding-left: 199px;
+            padding-right: 199px;
+            padding-top: 38px;
+        }
+
+        .hero-image-container {
+            width: 1090px;
+            background-color: #FFFFFF;
+            padding-top: 24px;
+            padding-bottom: 75px;
+            padding-left: 15px;
+            padding-right: 24px;
+            margin-bottom: 35px;
+        }
+
+        .hero-image {}
+
+        p {
+            width: 1095.85px;
+            text-align: justify;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 35px;
+            color: #4A4949;
+            margin-bottom: 50px;
+        }
+
+        .subtitle {
+            font-weight: 400;
+            font-size: 40px;
+            color: #425828;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        #carousel-controls {
+            width: 843.5px;
+            height: auto;
+        }
+
+        .d-block {
+            width: 980px;
+            height: 565px;
+        }
+
+        .carousel-container {
+            width: 1090px;
+            background-color: #FFFFFF;
+            padding-top: 15px;
+            padding-bottom: 75px;
+            padding-left: 123px;
+            padding-right: 123px;
+            margin-bottom: 35px;
+        }
+
+        .credit {
+            padding-top: 40px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #978E8E;
+            display: inline-block;
+        }
+
+        .decor-circle {
+            display: inline-block;
+            float: right;
+            padding-top: 40px;
+        }
+
+        .bold {
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 35px;
+            color: #4A4949;
+        }
+
+        .info {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #4A4949;
+        }
+
+        .fb-link {
+            background-color: #ADC197;
+            margin-top: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .buttons {
+            height: auto;
+            width: 592px;
+            border-radius: 50px;
+            background-color: #F2EDCD;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .social {
+            background-color: #F2EDCD;
+            border: none;
+        }
+
+        .like {
+            height: 45px;
+            width: 45px;
+            background-color: transparent;
+            color: #425828;
+            border-color: #425828;
+            border-radius: 50px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+
+        .like:hover {
+            background-color: #425828;
+            color: #F2EDCD;
+        }
+
+        .recommend {
+            font-weight: 400;
+            font-size: 24px;
+            color: #4A4949;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .recommend-article {
+            font-weight: 400;
+            font-size: 20px;
+            color: #4A4949;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hashtags {
+            display: flex;
+            justify-content: space-between;
+            align-content: stretch;
+            flex-wrap: wrap;
+            padding-left: 300px;
+            padding-right: 300px;
+            padding-top: 50px;
+            padding-bottom: 70px;
+        }
+
+        .hashtag {
+            width: 125px;
+            height: 48.22px;
+            background: #F0E8B6;
+            border: 1px solid #ABA36D;
+            border-radius: 100px;
+            margin: 10px
+        }
+
+        .footer {
+            height: 339px;
+            background-color: #F0E8B6;
+            display: flex;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            width: 275px;
+            height: 286px;
+            position: absolute;
+            top: 26px;
+            left: 150px
+        }
+
+        .author {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #657256;
+            padding: 20px;
+        }
+
+        .authors-1 {
+            padding-left: 600px;
+        }
+
+        .authors-2 {
+            padding-right: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- 要insert分頁和首頁hyperlink -->
+
+    <div class="header">
+        <div>
+            <a>
+                <img src="./assets/Logo_無字版 2.svg">
+            </a>
+        </div>
+        <div>
+            <a>·帶你去玩</a>
+        </div>
+        <div>
+            <a>·帶你去吃</a>
+        </div>
+        <div>
+            <a>·帶你去看</a>
+        </div>
+    </div>
+
+    <!-- 標題 -->
+    <div class="title">
+        <h1>2022年「台中！好像哪裡怪怪的」設計師交流之夜</h1>
+        <h2>年度最酷創意論壇，只限一晚！</h2>
+        <h3>
+            <span>文/COCO HUANG 與 珊寧 · 攝/DR. </span>
+            <span>2022/04/21</span>
+        </h3>
+    </div>
+
+    <!-- 1stpara -->
+
+    <div class="article">
+        <div class="hero-image-container">
+            <div class="hero-image"><img
+                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E6%9C%AC%E6%AC%A1%E8%AB%96%E5%A3%87%E6%B4%BB%E5%8B%95%E6%96%BCpark2%E4%B8%80%E6%A8%93%E5%8C%85%E5%A0%B4%E8%88%89%E8%BE%A6-b1%E5%A0%B4%E5%9F%9F%E4%B9%9F%E6%9C%83%E6%9C%89%E7%8F%BE%E5%A0%B4%E7%9A%84%E5%85%8D%E8%B2%BB%E8%BD%89%E6%92%AD-%E5%9C%96-park2%E8%8D%89%E6%82%9F%E5%BB%A3%E5%A0%B4%E6%8F%90%E4%BE%9B-1-1650633164.jpg?crop=1.00xw:0.753xh;0,0.239xh&resize=980:*">
+            </div>
+            <div class="credit">攝/@taipei_meowfood，日和珈琲；@66yolodiary，若生 靜巷</div>
+            <div class="decor-circle"> <img src="./assets/Group 23.svg"></div>
+        </div>
+        <p>設計迷必收！草悟道生活圈將於5月6日在PARK2草悟廣場首次舉辦日本東京最流行的 PechaKucha形式交流論壇，集結方序中等10位台北、台中設計、文化藝術界的重磅講者，以「20X20」的超級濃縮演講形式，以開放的露天形式在PARK2，輪番上陣分享！首場論壇主題「台中！好像哪裡怪怪的！」將為藝術愛好者，解開台中文化型態、藝術設計與創意體驗的秘密！周邊街區店家現場出攤，街區職人DJ音樂表演，讓你全方位感受草悟道的在地特色與趣味！4月21日正式開放限量售票。
+        </p>
+
+        <!-- 內文 -->
+
+        <div class="carousel-container-1">
+            <div id="carousel-controls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E6%9C%AC%E6%AC%A1%E8%AB%96%E5%A3%87%E6%B4%BB%E5%8B%95%E6%96%BCpark2%E4%B8%80%E6%A8%93%E5%8C%85%E5%A0%B4%E8%88%89%E8%BE%A6-b1%E5%A0%B4%E5%9F%9F%E4%B9%9F%E6%9C%83%E6%9C%89%E7%8F%BE%E5%A0%B4%E7%9A%84%E5%85%8D%E8%B2%BB%E8%BD%89%E6%92%AD-%E5%9C%96-park2%E8%8D%89%E6%82%9F%E5%BB%A3%E5%A0%B4%E6%8F%90%E4%BE%9B-1650624009.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E7%95%B6%E6%97%A5%E5%B0%87%E9%82%80%E8%AB%8B%E5%88%A5%E5%97%86%E5%A4%A7%E5%8F%94%E7%9A%84dj-rose%E6%96%BC%E7%8F%BE%E5%A0%B4%E9%9F%B3%E6%A8%82%E8%A1%A8%E6%BC%94-%E5%B0%87%E7%82%BA%E6%B4%BB%E5%8B%95%E5%B8%B6%E4%BE%86%E4%B8%8D%E4%B8%80%E6%A8%A3%E7%9A%84%E6%B0%A3%E6%B0%9B-%E5%9C%96-%E8%8D%89%E6%82%9F%E9%81%93%E7%94%9F%E6%B4%BB%E5%9C%88%E6%8F%90%E4%BE%9B-1650624320.jpeg?crop=1xw:1xh;center,top&resize=980:*"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E6%B4%BB%E5%8B%95%E4%B8%BB%E8%A6%96%E8%A6%BA-%E6%A9%AB%E5%BC%8F-1650623390.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                            alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="credit">攝/兆兆茶苑</div>
+            <div class="decor-circle"> <img src="./assets/Group 23.svg"></div>
+        </div>
+
+   
+
+        <div class="subtitle">亮點1：東京最流行的PechaKucha！</div>
+        <p>草悟道生活圈本場活動獲得 PechaKucha 官方許可，將採取源自日本東京的創意演講模式，以輕快且濃縮的方式呈現！講者只會用20張投影片搭配每20秒講述一張內容，在400秒內完成最豐富的主題分享！
+        </p>
+
+        <div class="subtitle">亮點2：直接包場PARK2草悟廣場</div>
+        <p>PARK2草悟廣場是台中最新熱點！草悟道生活圈當晚直接包場PARK2一樓，以開放的露天形式舉辦論壇，讓現場聽眾享受露天投影幕與台中夜晚的舒爽！B1場域也會有現場免費轉播！
+             </p>
+
+             <div class="subtitle">亮點3：十位超強講者，解秘台中</div>
+        <p>本次的論壇主題將以「台中！好像哪裡怪怪的」為出發點，邀集十位講者解密，透過他們的視角一同探尋品牌背後耐人尋味的故事，在不同觀點的分享之下，看見台中最有內容與創意的作品，帶來一場深度的跨界文化交流。
+            </p>
+            <p>
+            活動講者共分為8位地主講者與2位客座代表，領域橫跨商業集團、藝文空間與特色品牌，容包含SIDOLI RADIO 小島裡方序中、鳳嬌催化室李依耘、留白計畫王奕翔、街頭塗鴉藝術家吳小巴、富興工廠1962許清皓、家務室賀丞右、小路映画黃米露、感傷唱片行游璨賓、民生路老宅56-3謝艾婷和PARK2草悟廣場張懷安等10位講者。
+        </p>
+
+        <div class="subtitle">亮點4：最Chill的Afterparty</div>
+        <p>會後還有afterparty 互動交流，提供台中特有最chill的體驗！除了有提供知名品牌餐點，草悟道生活圈也邀請周邊街區店家現場出攤，還特別邀請「別嗆大叔」的DJ Rose於現場表演，讓參與者享受台中最在地的味覺與聽覺體驗！ </p>
+            <p>
+
+            <div class="bold">Powered by PechaKucha設計師交流之夜「台中！好像哪裡怪怪的！」</div>
+            <div class="info">
+                <div>【客座講者】SIDOLI RADIO 小島裡－方序中／鳳嬌催化室－李依耘</div>
+                <div>【地主代表】留白計畫－王奕翔／街頭塗鴉藝術家－吳小巴／富興工廠1962－許清皓／PARK2－張懷安／家務室－賀丞右／小路映画－黃米露／感傷唱片行－游璨賓／民生路老宅56-3－謝艾婷</div>
+                <div>活動日期｜2022.05.06（五）</div>
+                    <div>活動時間｜19:00-21:30（18：30開始驗票進場）</div>
+                    <div>活動地點｜PARK2草悟廣場1樓 台中市西區英才路534號</div>
+                    <div>售票資訊｜250元，採自由座席，票數有限、一人限購兩張</div>
+            </div>
+
+            <!-- FB Link -->
+            <button class="fb-link">
+                <a href="https://www.accupass.com/event/2204151035121623506456" target="_blank" style="color: #404040">馬上訂票！</a>
+            </button>
+
+            <p>
+                <a href="https://www.elle.com/tw/life/culture/g39794333/2022-taichung-creative-forum/" target="_blank"
+                    style="color: #404040;">
+                    文章來源：ELLE 2022年「台中！好像哪裡怪怪的」設計師交流之夜 </a>
+            </p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <div>
+                <button class="like like-1">♡</button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://www.facebook.com/elle.tw" target="_blank"><img
+                            src="./assets/Facebook Icon 1.svg"></a>
+                </button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://www.instagram.com/elletaiwan/" target="_blank"><img
+                            src="./assets/instagram icon 1.svg"></a>
+                </button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://twitter.com/ellemagazine" target="_blank"><img src="./assets/twitter.svg"></a>
+                </button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://page.line.me/ojy7419l?openQrModal=true" target="_blank"><img
+                            src="./assets/Line Icon.svg"></a>
+                </button>
+            </div>
+        </div>
+
+        <!-- 文章推薦 -->
+
+        <div class="recommend">猜你會喜歡......</div>
+        <div class="recommend-article">
+            <div>
+                <a>文章一：XXXXXXXXXX</a>
+            </div>
+            <div>
+                <a>文章二：XXXXXXXXXX</a>
+            </div>
+            <div>
+                <a>文章三：XXXXXXXXXX</a>
+            </div>
+        </div>
+
+        <!-- Hashtag -->
+
+        <div class="hashtags">
+            <div><button class="hashtag">台中</button></div>
+            <div><button class="hashtag">美食</button></div>
+            <div><button class="hashtag">設計</button></div>
+            <div><button class="hashtag">傳統市場</button></div>
+            <div><button class="hashtag">茶屋</button></div>
+            <div><button class="hashtag">花店</button></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <img src="./assets/Logo_有字版.png" class="logo">
+        </div>
+        <div class="authors-1">
+            <div class="author">
+                珊寧
+            </div>
+            <div class="author">
+                黃煒晶
+            </div>
+            <div class="author">
+                莊宇玫
+            </div>
+        </div>
+        <div class="authors-2">
+            <div class="author">
+                莊文源
+            </div>
+            <div class="author">
+                鄭治琦
+            </div>
+            <div class="author">
+                李法賢老師
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

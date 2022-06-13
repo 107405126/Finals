@@ -1,0 +1,667 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .header {
+            background-color: #F0E8B6;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 199px;
+            padding-right: 199px;
+        }
+
+        .title {
+            height: 220px;
+            background-color: #FFFDED;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 58px;
+            color: #425828;
+            display: flex;
+            padding-left: 199px;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-weight: 200;
+            font-size: 24px;
+            line-height: 29px;
+            color: #657256;
+            display: flex;
+            padding-left: 199px;
+            padding-bottom: 5px;
+        }
+
+        span {
+            font-weight: 200;
+            font-size: 20px;
+            line-height: 24px;
+            color: #978E8E;
+            padding-left: 199px;
+            flex-wrap: nowrap;
+        }
+
+        .article {
+            background-color: #F3F2E7;
+            padding-left: 199px;
+            padding-right: 199px;
+            padding-top: 38px;
+        }
+
+        .hero-image-container {
+            width: 1090px;
+            background-color: #FFFFFF;
+            padding-top: 24px;
+            padding-bottom: 75px;
+            padding-left: 15px;
+            padding-right: 24px;
+            margin-bottom: 35px;
+        }
+
+        .hero-image {}
+
+        p {
+            width: 1095.85px;
+            text-align: justify;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 35px;
+            color: #4A4949;
+            margin-bottom: 50px;
+        }
+
+        .subtitle {
+            font-weight: 400;
+            font-size: 40px;
+            color: #425828;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        #carousel-controls {
+            width: 843.5px;
+            height: auto;
+        }
+
+        .d-block {
+            width: 980px;
+            height: 565px;
+        }
+
+        .carousel-container {
+            width: 1090px;
+            background-color: #FFFFFF;
+            padding-top: 15px;
+            padding-bottom: 75px;
+            padding-left: 123px;
+            padding-right: 123px;
+            margin-bottom: 35px;
+        }
+
+        .credit {
+            padding-top: 40px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #978E8E;
+            display: inline-block;
+        }
+
+        .decor-circle {
+            display: inline-block;
+            float: right;
+            padding-top: 40px;
+        }
+
+        .bold {
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 35px;
+            color: #4A4949;
+        }
+
+        .info {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #4A4949;
+        }
+
+        .fb-link {
+            background-color: #ADC197;
+            margin-top: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .buttons {
+            height: auto;
+            width: 592px;
+            border-radius: 50px;
+            background-color: #F2EDCD;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .social {
+            background-color: #F2EDCD;
+            border: none;
+        }
+
+        .like {
+            height: 45px;
+            width: 45px;
+            background-color: transparent;
+            color: #425828;
+            border-color: #425828;
+            border-radius: 50px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+
+        .like:hover {
+            background-color: #425828;
+            color: #F2EDCD;
+        }
+
+        .recommend {
+            font-weight: 400;
+            font-size: 24px;
+            color: #4A4949;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .recommend-article {
+            font-weight: 400;
+            font-size: 20px;
+            color: #4A4949;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hashtags {
+            display: flex;
+            justify-content: space-between;
+            align-content: stretch;
+            flex-wrap: wrap;
+            padding-left: 300px;
+            padding-right: 300px;
+            padding-top: 50px;
+            padding-bottom: 70px;
+        }
+
+        .hashtag {
+            width: 125px;
+            height: 48.22px;
+            background: #F0E8B6;
+            border: 1px solid #ABA36D;
+            border-radius: 100px;
+            margin: 10px
+        }
+
+        .footer {
+            height: 339px;
+            background-color: #F0E8B6;
+            display: flex;
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .logo {
+            width: 275px;
+            height: 286px;
+            position: absolute;
+            top: 26px;
+            left: 150px
+        }
+
+        .author {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #657256;
+            padding: 20px;
+        }
+
+        .authors-1 {
+            padding-left: 600px;
+        }
+
+        .authors-2 {
+            padding-right: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <!-- 要insert分頁和首頁hyperlink -->
+
+    <div class="header">
+        <div>
+            <a>
+                <img src="./assets/Logo_無字版 2.svg">
+            </a>
+        </div>
+        <div>
+            <a>·帶你去玩</a>
+        </div>
+        <div>
+            <a>·帶你去吃</a>
+        </div>
+        <div>
+            <a>·帶你去看</a>
+        </div>
+    </div>
+
+    <!-- 標題 -->
+    <div class="title">
+        <h1>跟著設計人何承育一探口袋好店</h1>
+        <h2>空靈茶屋、沒有招牌的花店，還有台灣最美傳統市場！</h2>
+        <h3>
+            <span>文/Coco Huang · 攝/Ben Chen、Nk Cheng、White Peace、DR. · 助/ Elka Shania</span>
+            <span>2021/10/01</span>
+        </h3>
+    </div>
+
+    <!-- 內文 -->
+
+    <div class="article">
+        <div class="hero-image-container">
+            <div class="hero-image"><img
+                    src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/fotojet-69-1647926195.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*">
+            </div>
+            <div class="credit">攝/Ben Chen、DR.</div>
+            <div class="decor-circle"> <img src="./assets/Group 23.svg"></div>
+        </div>
+        <p>站在台灣第一個把工地變美術館的「工家美術館」戶外露台，放眼看去，是勤美誠品綠園道一片生機昂然的綠，是風風火火正在興建中高樓建築的各式線條……一切就像幅行動藝術的畫面，領我們穿梭畫面之中的是勤美璞真文化藝術基金會執行長何承育，談到若以線條來比擬台中：「就像一團線啊，看不出起點、終點，讓你一時之間抓不到頭緒，但隨時都是一個開始，各種可能性正在不斷的發生！」
+        </p>
+        <p>何承育大學是在實踐念工業設計，並曾赴英國倫敦攻讀品牌與創新，設計的感性、經營的理性，同時出現在他身上，讓他能以不同眼光，觀看與設計這個城市，「兒時跟著家人遊走第二市場，吃吃喝喝、熱熱鬧鬧，到了初入社會工作時，就變成跟朋友們去一個又一個的浮誇系餐廳約會吃飯。」這些在台中的生活點滴，全成了他的設計養份。
+        </p>
+        <p>於是，何承育大膽地將傳統市場的概念帶入摩登時髦的百貨商場內，在金典綠園道開創一個除去傳統市場痛點，但依然能展現市場真實底蘊、接軌現代的「第六市場」。熱愛嘗試各種創意可能性的他，更將勤美術館施工中的工地，結合共享概念，打造成一個期間限定、有機演進的「工家美術館。」何承育也透露，正推動串連勤美誠品綠園道周邊的100家生活好店，將推出首張跨出百貨商場的集點卡，憑卡可以享受勤美誠品與這些小店交互串連的優惠、活動等等，一個好好生活的新美學聚落，儼然成形。
+        </p>
+
+        <!-- store1 -->
+        <div class="subtitle">#1 兆兆茶苑</div>
+
+        <div class="carousel-container-1">
+            <div id="carousel-controls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/124995066-2834177360162586-3788086118072382976-n-1632817960.jpeg?crop=1xw:1xh;center,top&resize=980:*"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E5%85%86%E5%85%86%E8%8C%B6%E8%8B%91-%E5%9C%96%E7%89%87%E6%8F%90%E4%BE%9B-%E5%85%86%E5%85%86%E8%8C%B6%E8%8B%91-210419-0-1632817910.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                            alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E5%85%86%E5%85%86%E8%8C%B6%E8%8B%91-%E5%9C%96%E7%89%87%E6%8F%90%E4%BE%9B-%E5%85%86%E5%85%86%E8%8C%B6%E8%8B%91-210419-1632817985.jpg?crop=1xw:1xh;center,top&resize=980:*"
+                            alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="credit">攝/兆兆茶苑</div>
+            <div class="decor-circle"> <img src="./assets/Group 23.svg"></div>
+        </div>
+
+        <!-- 店家介紹 -->
+        <p>位於審計新村附近的兆兆茶苑，老闆是出身南投霧社的茶世家二代，從12歲開始就投入茶產業，何承育說，兆兆茶苑呈現了新一代將傳統製茶重新轉型的精采樣貌，空間極具設計，以原木、黑色的低調，揉合綠植、天光，流轉靜心氣息。</p>
+        <p>除了買茶、品茶，還有製茶空間，讓台灣茶文化以最溫柔的方式融入生活。</p>
+
+        <div class="bold">兆兆茶苑</div>
+        <div class="info">
+            <div>地址：台中市西區向上路一段79巷66弄22號</div>
+            <div>營業時間：週一至週五 12:00-17:30、週六 12:00-18:00，週日店休</div>
+            <div>電話：04 2301 1222</div>
+        </div>
+
+        <!-- FB Link -->
+        <button class="fb-link">
+            <a href="https://www.facebook.com/ZhaoZhaoTeaLounge/" target="_blank" style="color: #404040">官方FB粉專</a>
+        </button>
+
+        <!-- store2 -->
+        <div class="subtitle">#2 壹玖捌參古物店</div>
+
+        <div class="carousel-container-2">
+            <div id="carousel-controls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E7%A9%BA%E9%96%932-1632818191.jpeg?crop=1xw:1xh;center,top&resize=980:*"
+                        alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E7%A9%BA%E9%96%931-1632818261.jpeg?crop=1xw:1xh;center,top&resize=980:*"
+                        alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                        src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E5%BA%97%E9%9D%A2-1632818360.jpeg?crop=1xw:1xh;center,top&resize=980:*"
+                        alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="credit">攝/壹玖捌參古物店</div>
+            <div class="decor-circle"> <img src="./assets/Group 23.svg"></div>
+        </div>
+
+        <!-- 店家介紹 -->
+        <p>壹玖捌參古物店主理人原是只出現在舊物盛典等市集，他以台灣和日本1970到90年的古件為主精采搜集，在古物界享有盛名。</p>
+        <p>他一年前開設實體店面，精采收藏的古物件，古董藥櫃、孔雀椅等，隨手一擺，盡展姿態，更顯恬靜之美，老闆相信歲月是濾鏡，可以讓人與物的相遇，重新染上色彩。</p>
+
+        <div class="bold">壹玖捌參</div>
+        <div class="info">
+            <div>地址：台中市東區進化路80-1號</div>
+            <div>營業時間：週二至週日 13:00-19:00</div>
+            <div>電話：0906 521 377</div>
+        </div>
+
+        <!-- FB Link -->
+        <button class="fb-link">
+            <a href="https://www.facebook.com/1983fine" target="_blank" style="color: #404040">官方FB粉專</a>
+        </button>
+
+        <!-- store3 -->
+        <div class="subtitle">#3 火山花店</div>
+
+        <div class="carousel-container-3">
+            <div id="carousel-controls" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/241715901-6174662042575037-4672886644942762712-n-1632818571.jpeg?crop=1xw:1xh;center,top&resize=768:*"
+                            alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/%E7%81%AB%E5%B1%B1%E8%8A%B1%E5%BA%97-%E5%9C%96%E7%89%87%E6%8F%90%E4%BE%9B-%E8%8D%89%E6%82%9F%E9%81%93%E7%94%9F%E6%B4%BB%E5%9C%88-210419-0-1632818610.jpg?crop=1xw:1xh;center,top&resize=768:*"
+                            alt="Second slide">
+                    </div>
+
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="credit">攝/火山花店</div>
+        <div class="decor-circle"> <img src="./assets/Group 23.svg"></div>
+
+        <!-- 店家介紹 -->
+        <p>位於向上市場附近、外觀低調到讓人找不到任何招牌，宛如民宅一般的火山花店，推開木門一走進去後，乾燥花、盆栽、老件、雜貨營造出來的各種精彩，絕對讓你像是目睹璀璨花火般的驚嘆。而且有趣的是這裡雖然叫花店，但同時也是咖啡館、甜點店，讓人完全沉浸在生活之美。
+        </p>
+
+        <div class="bold">火山花店</div>
+        <div class="info">
+            <div>地址：地址：台中市西區中美街253巷22號</div>
+            <div>電話：0971 576 919</div>
+
+            <!-- store4 -->
+            <div class="subtitle">#4 第六市場</div>
+
+            <div class="carousel-container-4">
+                <div id="carousel-controls" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100"
+                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ben-9429-1632818935.jpg?crop=1xw:1xh;center,top&resize=768:*"
+                                alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100"
+                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ben-9332-1632819018.jpg?crop=1xw:1xh;center,top&resize=768:*"
+                                alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100"
+                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ben-9470-1632819082.jpg?crop=1xw:1xh;center,top&resize=768:*"
+                                alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div class="credit">攝/BEN CHEN</div>
+                <div class="decor-circle"> <img src="./assets/Group 23.svg"></div>
+            </div>
+
+            <!-- 店家介紹 -->
+            <p>隱身於金典綠園道的台中「第六市場」，有台灣最美傳統市場封號，有趣的是這個像是從街頭搬來的市場，是完全復刻、重新改造，何承育說，「我們想讓逛市場變成一件很享受的事！」於是，他在摩登百貨裡特挑一樓層，將一個個好攤搬進，像是熱騰騰的蒸蛋糕、香噴噴的雞蛋糕，不時還有人招呼著試吃蜜餞果乾、試喝好茶…
+            </p>
+            <p>傳統市場的文化底蘊，在此重現，且融合了現代、文創之美，像是舒適冷氣、寬敞走道等，甚至還有獨一無二的市場誌與策展呢。
+
+            </p>
+
+            <div class="bold">第六市場 </div>
+            <div class="info">
+                <div>地址：台中市西區健行路1049號3樓（金典綠園道商場） </div>
+                <div> 營業時間：週二至週日 10:00-21:00，每週一休市</div>
+                <div>電話：04-2319-8000</div>
+            </div>
+
+
+            <!-- store5 -->
+            <div class="subtitle">#5 別嗆大叔</div>
+
+            <div class="carousel-container-5">
+                <div id="carousel-controls" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100"
+                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/image4-1632816945.jpeg?crop=1xw:1xh;center,top&resize=980:*"
+                                alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100"
+                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/image5-1632816978.jpeg?crop=1xw:1xh;center,top&resize=980:*"
+                                alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100"
+                                src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/image9-1632817039.jpeg?crop=1xw:1xh;center,top&resize=980:*"
+                                alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div class="credit">攝/別嗆大叔</div>
+                <div class="decor-circle"> <img src="./assets/Group 23.svg"></div>
+            </div>
+
+            <!-- 店家介紹 -->
+            <p>這是一間非常個性的店！老闆將這家店定調為「行動唱片餐館」，骨子裡很浪漫的他，將小店藏在傳統的模範市場裡，看似唱片行，但也賣美味的手作咖哩飯。</p>
+            <p>「因為這是段一個人的奇幻旅行，在旅途中，我們加了音樂和咖哩，讓這趟旅行，變得更豐富、更奇幻、更刺激！」來台中，記得搭上大叔的這趟旅行，留下最難忘的回憶。</p>
+
+            <div class="bold">別嗆大叔</div>
+            <div class="info">
+                <div>地址：台中市西區模範市場一巷10號</div>
+                <div>營業時間：週一至週六 17:30-22:30，週日公休</div>
+                <div>電話：04 2301 1625</div>
+            </div>
+
+            <!-- FB Link -->
+            <button class="fb-link">
+                <a href="https://www.facebook.com/djrose0319" target="_blank" style="color: #404040">官方FB粉專</a>
+            </button>
+
+            <p>
+                <a href="https://www.elle.com/tw/life/style/g37750648/taichung-local-recommend2/" target="_blank"
+                    style="color: #404040;">
+                    文章來源：ELLE【台中最強地頭蛇】跟著設計人何承育一探口袋好店 </a>
+            </p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <div>
+                <button class="like like-1">♡</button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://www.facebook.com/elle.tw" target="_blank"><img
+                            src="./assets/Facebook Icon 1.svg"></a>
+                </button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://www.instagram.com/elletaiwan/" target="_blank"><img
+                            src="./assets/instagram icon 1.svg"></a>
+                </button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://twitter.com/ellemagazine" target="_blank"><img src="./assets/twitter.svg"></a>
+                </button>
+            </div>
+            <div>
+                <button class="social">
+                    <a href="https://page.line.me/ojy7419l?openQrModal=true" target="_blank"><img
+                            src="./assets/Line Icon.svg"></a>
+                </button>
+            </div>
+        </div>
+
+        <!-- 文章推薦 -->
+
+        <div class="recommend">猜你會喜歡......</div>
+        <div class="recommend-article">
+            <div>
+                <a>文章一：XXXXXXXXXX</a>
+            </div>
+            <div>
+                <a>文章二：XXXXXXXXXX</a>
+            </div>
+            <div>
+                <a>文章三：XXXXXXXXXX</a>
+            </div>
+        </div>
+
+        <!-- Hashtag -->
+
+        <div class="hashtags">
+            <div><button class="hashtag">台中</button></div>
+            <div><button class="hashtag">美食</button></div>
+            <div><button class="hashtag">設計</button></div>
+            <div><button class="hashtag">傳統市場</button></div>
+            <div><button class="hashtag">茶屋</button></div>
+            <div><button class="hashtag">花店</button></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div>
+            <img src="./assets/Logo_有字版.png" class="logo">
+        </div>
+        <div class="authors-1">
+            <div class="author">
+                珊寧
+            </div>
+            <div class="author">
+                黃煒晶
+            </div>
+            <div class="author">
+                莊宇玫
+            </div>
+        </div>
+        <div class="authors-2">
+            <div class="author">
+                莊文源
+            </div>
+            <div class="author">
+                鄭治琦
+            </div>
+            <div class="author">
+                李法賢老師
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
